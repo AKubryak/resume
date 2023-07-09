@@ -1,0 +1,32 @@
+/* ссылки, псевдоселекторы, кнопки */
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: aqua;
+}
+/* a:visited{
+    color: red;
+} */
+
+/* кнопка */
+.btn{
+    /* цвет кнопки */
+    background: #f99472;
+    color: white;
+    /* размер кнопки */
+    padding: 15px 20px;
+    /* без границы кнопка */
+    border: none;
+    border-radius: 5px;
+    /* курсор при наведении */
+    cursor: pointer;
+}
+.btn:hover{
+    /* прозрачность при наведении */
+    opacity: 0.8;
+}

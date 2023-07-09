@@ -1,0 +1,175 @@
+/* Указывать лучшне несколько, если не поддерживается один, возьмётся другой */
+/* Шрифты можно импортировать с Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+body{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* Можно объединить в один: */
+    /* font: normal 20px 'Roboto', sans-serif;  */
+    /* letter-spacing: 5px; */
+    /* word-spacing: 10px; */
+    line-height: 1.6em;
+    /* font-style: italic; */
+    /* text-decoration: line-through; */
+    background: #f0c8a7;
+}
+.container{
+    margin: auto;
+    /* ширина будет изменяться на устройствах */
+    max-width: 750px;
+}
+.avatar{
+    width: 200px;
+    border-radius: 10%;
+    /* тень картинки */
+    box-shadow: 10px 10px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.card{
+    border-radius: 10px;
+    padding: 10px;
+    /* отступы блоков */
+    margin-bottom: 10px;
+    /* тень блоков */
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Блок Навигации */
+.navbar{
+    background: #e19c9c;
+    /* отступ сверху и снизу будет 10, слева и справа 20 */
+    /* padding: 10px 20px; */
+    /* отступ от остальных элементов */
+    margin-bottom: 10px;
+}
+.navbar ul{
+    /* обнуляем отступы */
+    margin: 0;
+    padding: 0;
+    /* убираем точки в списке */
+    list-style: none;
+    /* ссылки в ОДНУ строку */
+    display: flex;
+    /* отступ по бокам */
+    padding: 0 20px;
+}
+.navbar ul li {
+    /* Растянуть по всей области */
+    width: 100%;
+    text-align: center;
+
+    margin-right: 10px;
+    /* при наведении цвеличивается область подсветки на весь блок (если убрать отступы из .navbar) */
+    padding: 10px;
+}
+.navbar ul li:hover {
+    background: #ea6767;
+}
+/* :last-child - обращение к последнему элементу, :first-child - обращение к первому элементу */
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+/* Фамилия и Имя */
+.bg-vi{
+    background: #af45e4;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* О себе */
+.bg-lightsalmon{
+    background: #ef9e7e;
+    margin: 0;
+}
+.bg-lightsalmon p, h5, a{
+    margin: 0;
+    padding: 0;
+    padding: 5px;
+}
+
+/* Образование */
+.bg-green{
+    background: #a0f54b;
+}
+.bg-green ol{
+    /* обнуляем отступы */
+    padding: 0;
+    margin: 0;
+    padding: 0 0 10px 20px;
+}
+.bg-green h2{
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+.bg-green li{
+    margin-bottom: 5px;
+    /* линия после каждого элемента списка */
+    border-bottom: 1px solid grey;
+    padding: 5px;
+}
+
+/* Опыт работы */
+.bg-fi{
+    background: #EE82EE;
+}
+.bg-fi h2{
+    background: #EE82EE;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+/* Контакты */
+.bd-brown{
+    background: #da4646;
+    color: white;
+}
+.bd-brown h2{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+/* округлость полей ввода имени и текста */
+.bd-brown input, textarea{
+    border-radius: 5px;
+    border: none;
+}
+.bd-brown textarea{
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+}
+
+/* Таблица */
+.table{
+    /* ШИРИНА ПО ВСЕМУ ОКНУ */
+    width: 100%;
+}
+.table td{
+    /* расположение текста в ячейке */
+    text-align: center;
+    /* отступ между строками */
+    padding: 5px 0 5px 0;
+}
+table td:hover{
+    /* цвет при наведении на ячейку */
+    background: #eeefff;
+    /* меняется курсор при наведении */
+    cursor: pointer;
+}
+/* Изменение цвета строк */
+/* odd - нечетные, even - четные, tr - строки, td - столбцы */
+table thead:nth-child(1){
+    background: #c2f1f1;
+}
+table tbody:nth-child(even){
+    background: #ffffff;
+}
+/* Изменение цвета второго и четвертого столбца
+table td:nth-child(2), table td:nth-child(4){
+    background: #e19c9c;
+} */
